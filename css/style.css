@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(115deg, rgba(81, 78, 78, 0.612), rgba(63, 63, 82, 0.31)), url(/img/filmes.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1.5px);
+    font-family: 'Robot Mono', sans-serif;
+}
+
+form {
+    background-color: #000000b2;
+    color: #fff;
+    width: 30rem;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.informations {
+    display: grid;
+    padding-top: 0.8rem;
+}
+
+#text-top h1,
+#text-top p {
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+}
+
+.field {
+    margin-bottom: 1rem;
+    border: 1.5px solid #fff;
+}
+
+.field legend {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 1.8rem;
+}
+
+.checkboxs {
+    display: grid;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.checkboxs label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#sexo {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+textarea {
+    margin-bottom: 1rem;
+    width: 443px;
+    font-size: 12pt;
+    border-radius: 5px;
+}
+
+input[type=text],
+input[type=email] {
+    padding-left: 0.8rem;
+    height: 2.5rem;
+    margin: 0.2rem 0rem 1rem;
+    border-radius: 10px;
+}
+
+input[type=number] {
+    height: 2.5rem;
+    margin: 0.2rem 0rem 0rem;
+    padding-left: 0.8rem;
+    border-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+h4 {
+    text-align: left;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 0.2rem;
+}
+
+.submit-form {
+    display: grid;
+    justify-items: center;
+}
+
+#submit {
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #b7b7b7;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #7e7e7e;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 450px) {
+    form {
+        width: 23rem;
+    }
+
+    .submit-form {
+        display: grid;
+    }
+
+    textarea {
+        width: 331px;
+        border-radius: 5px;
+    }
+}

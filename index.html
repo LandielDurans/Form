@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Favorite Movie Form</title>
+</head>
+
+<body>
+    <div id="text-top">
+        <h1 id="title">Form Filmes</h1>
+        <p id="description">Agradecemos pela sua contribuição</p>
+    </div>
+    <form id="form">
+
+        <fieldset class="informations">
+            <legend>Insira seus dados</legend>
+
+            <label for="name" id="name-label">Digite seu nome:</label>
+            <input type="text" name="name" id="name" placeholder="Insira seu nome" required>
+
+            <label for="email" id="email-label">Digite seu email:</label>
+            <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+
+            <label for="number" id="number-label">Digite seu número: </label>
+            <input type="text" name="number" id="number" placeholder="(xx) xxxxx-xxxx" maxlength="15" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+        </fieldset>
+
+        <section id="sexo">
+            <p>Qual seu genêro?</p>
+            <input type="radio" name="Rad" id="masc" value="Masculino" required> Masculino
+            <input type="radio" name="Rad" id="femin" value="Feminino" required> Feminino
+            <input type="radio" name="Rad" id="nao" value="Não Dizer" required> Prefiro não dizer
+        </section>
+
+        <fieldset class="field">
+            <legend>Qual seu estilo de filme favorito?</legend>
+            <div class="checkboxs">
+                <label for="terror">
+                    <input type="checkbox" name="estilo" id="terror" value="ter" required>
+                    Terror
+                </label>
+
+                <label for="comedia">
+                    <input type="checkbox" name="estilo" id="comedia" value="comed" required>
+                    Comédia
+                </label>
+
+                <label for="romance">
+                    <input type="checkbox" name="estilo" id="romance" value="roman" required>
+                    Romance
+                </label>
+
+                <label for="acao">
+                    <input type="checkbox" name="estilo" id="acao" value="acao" required>
+                    Acão
+                </label>
+
+                <label for="sci">
+                    <input type="checkbox" name="estilo" id="sci" value="scifi" required>
+                    Sci-Fi
+                </label>
+
+                <label for="antigos">
+                    <input type="checkbox" name="estilo" id="antigos" value="anti" required>
+                    Antigos
+                </label>
+            </div>
+        </fieldset>
+
+        <h4>Digite seu comentário:</h4>
+        <section class="submit-form">
+            <textarea name="" id="text-comment" style="resize: vertical; height: 60px;"></textarea>
+            <button id="submit">Enviar</button>
+        </section>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
