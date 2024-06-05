@@ -8,7 +8,7 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(115deg, rgba(81, 78, 78, 0.612), rgba(63, 63, 82, 0.31)), url(img/filmes.jpg);
+    background-image: linear-gradient(115deg, rgba(81, 78, 78, 0.612), rgba(63, 63, 82, 0.31)), url(../img/filmes.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
